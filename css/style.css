@@ -23,6 +23,18 @@ ul {
 	list-style: none;
 }
 
+.btn {
+	color: white;
+	background-color: #4863f7;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #0825C6;
+
+}
+
 header,
 .about-me,
 .services,
@@ -68,22 +80,16 @@ nav a {
 }
 
 nav ul li a:hover {
-	color: #a43c32;
+	color: #0825C6;
 }
 
 .curriculum-btn {
 	width: 150px;
 	height: 40px;
-	color: white;
-	background-color: #4863f7;
 	font-size: 18px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-}
-
-.curriculum-btn:hover {
-	background-color: #a43c32;
 }
 
 /* Sobre mim */
