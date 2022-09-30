@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/089babe34a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/089babe34a.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -30,6 +30,9 @@
                     <a href="">Serviços</a>
                 </li>
                 <li>
+                    <a href="">habilidades</a>
+                </li>
+                <li>
                     <a href="">Projectos</a>
                 </li>
                 <li>
@@ -42,17 +45,21 @@
     </header>
 
     <main>
-        <section class="welcome">
+        <!-- Sobre mim -->
+        <section class="about-me">
             <div class="column">
                 <h1>Olá, Eu sou <br> <span id="nome">Epifânio Francisco</span> <br> Desenvolvedor Frontend</h1>
-                <p>Sou o Epifânio, desenvolvedor com maior foco em desenvolvimento Front End. Atualmente trabalho como freelancer com projetos de tamanho pequeno, médio e grande porte. Gosto de estar sempre aprendendo coisas novas e continuar subindo cada dia mais, rumo ao espaço.</p>
+                <p>Sou o Epifânio, desenvolvedor com maior foco em desenvolvimento Front End. Atualmente trabalho como
+                    freelancer com projetos de tamanho pequeno, médio e grande porte. Gosto de estar sempre aprendendo
+                    coisas novas e continuar subindo cada dia mais, rumo ao espaço.</p>
 
                 <button class="curriculum-btn">Download CV</button>
             </div>
 
-            <div class="welcome-img"></div>
+            <div class="about-me-img"></div>
         </section>
 
+        <!-- Meus serviços -->
         <section class="services">
 
             <h1>Meus serviços</h1>
@@ -76,6 +83,7 @@
             </div>
         </section>
 
+        <!-- Minhas habilidades e ferramentas -->
         <section class="my-skills">
             <h2>Minhas <span>habilidades</span></h2>
 
@@ -109,8 +117,79 @@
             </div>
         </section>
 
+        <!-- Meus projectos -->
         <section class="projects">
+            <div class="row">
+                <div class="text">
+                    <h2>Projectos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum necessitatibus.</p>
+                </div>
 
+                <div class="col">
+                    <div class="row">
+                        <button class="btn-projects active">Todos Projectos</button>
+                        <button class="btn-projects">Projectos Pessoais</button>
+                        <button class="btn-projects">Projectos Profissionais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cards">
+                <div class="card">
+                </div>
+                <div class="card">
+
+                </div>
+                <div class="card">
+
+                </div>
+            </div>
+
+            <button class="all-projects">Todos Projectos</button>
+        </section>
+
+        <!-- Contactos -->
+        <section class="contact-us">
+            <div class="column">
+                <h1>Contactos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, debitis. Nemo excepturi minus
+                    nulla.</p>
+
+                <div class="col">
+                    <address>
+                        <div class="col-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="">
+                                <span>Telefone</span>
+                                <a href="#">+244 995621921</a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="">
+                                <span>Email</span>
+                                <a href="#">epifaniofrancisco03@gmail.com</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h3>Fale connosco</h3>
+                <form action="#">
+                    <div class="row">
+                        <input type="text" name="name" id="name" placeholder="Nome">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="row">
+                        <input type="tel" name="phone" id="phone" placeholder="Telefone">
+                        <input type="text" name="topic" id="topic" placeholder="Assunto">
+                    </div>
+
+                    <input type="text" name="textarea" id="textarea" placeholder="Digite a mensagem">
+                </form>
+            </div>
         </section>
     </main>
 
