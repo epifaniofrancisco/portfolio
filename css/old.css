@@ -1,0 +1,344 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+body {
+	color: #fffffc;
+	background-color: #121214;
+}
+
+nav,
+ul {
+	list-style: none;
+}
+
+.btn {
+	color: white;
+	background-color: #4863f7;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #0825C6;
+
+}
+
+header,
+.about-me,
+.services,
+.my-skills,
+.projects,
+.contact-us {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+header {
+	height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: white;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 2.5rem;
+}
+
+/* #182049 #8257e5 */
+
+nav a {
+	color: #4863f7;
+	font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+	color: #0825C6;
+}
+
+.curriculum-btn {
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Sobre mim */
+.about-me {
+	height: 600px;
+	display: flex;
+	margin-top: 3rem;
+}
+
+.about-me .column {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 50px;
+}
+
+.about-me .column h1 {
+	font-size: 2.1rem;
+	margin-bottom: 1.2rem;
+}
+
+.about-me .column h1 span {
+	color: #4863f7;
+}
+
+.about-me .column p {
+	font-size: 16px;
+	margin-bottom: 3rem;
+}
+
+.about-me .about-me-img {
+	width: 70%;
+	height: 100%;
+	background-color: #4863f7;
+}
+
+/* Services */
+.services {
+	margin-top: 6rem;
+}
+
+.services i {
+	color: #4863f7;
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.services h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.services .services-cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services .card {
+	width: 350px;
+	height: 230px;
+	background-color: #212125;
+	border-radius: 8px;
+	padding: 0 0.8rem;
+}
+
+.services .card:hover {
+	border: 1px solid #4863f7;
+}
+
+.services .card h3 {
+	margin: 0.9rem 0;
+}
+
+/* My Skills */
+.my-skills {
+	margin: 6rem auto;
+}
+
+.my-skills h2 span {
+	color: #4863f7;
+}
+
+.skills-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rectangle {
+	width: 180px;
+	height: 50px;
+	background-color: #212125;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 2rem;
+	padding: 10px;
+}
+
+.rectangle-short {
+	width: 135px;
+}
+
+.rectangle:hover {
+	background-color: #4863f7;
+}
+
+.rectangle span {
+	font-weight: 600;
+	font-size: 1.3rem;
+	margin-left: 10px;
+}
+
+.skill {
+	width: 30px;
+	height: 30px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+}
+
+.projects .row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.projects .row .text p {
+	width: 30rem;
+	margin-top: 1rem;
+}
+
+.projects .row .btn-projects {
+	width: 10rem;
+	height: 3rem;
+	color: white;
+	background: #121214;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.projects .row .btn-projects:hover {
+	background: #4863f7;
+}
+
+.projects .row .btn-projects.active {
+	background: #4863f7;
+}
+
+.projects .projects-cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.projects-cards .card {
+	width: 500px;
+	height: 16rem;
+	background-color: #4863f7;
+	margin-right: 2rem;
+}
+
+.projects .all-projects {
+	width: 12rem;
+	height: 3rem;
+	color: white;
+	background-color: #4863f7;
+	font-size: 1.1rem;
+	margin: 4rem auto;
+}
+
+/* Contact */
+.contact-us {
+	height: 600px;
+	display: flex;
+	margin-top: 3rem;
+}
+
+.contact-us .column {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+}
+
+.contact-us .column h1 {
+	font-size: 2.1rem;
+	margin-bottom: 1.2rem;
+}
+
+.contact-us .column h1 span {
+	color: #4863f7;
+}
+
+.contact-us .column p {
+	font-size: 16px;
+	margin-bottom: 3rem;
+}
+
+.contact-us form .row {
+    width: 100%;
+	display: flex;
+	margin-right: 5rem;
+    margin-top: 1rem;
+}
+
+.contact-us form {
+    margin-top: 3rem;
+}
+
+.contact-us form input {
+    width: 19rem;
+    height: 2.5rem;
+    font-size: 18px;
+    margin-right: 1rem;
+    padding: 10px 15px;
+}
+
+.contact-us form #textarea {
+    width: 100%;
+    height: 20rem;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding: 10px 15px;
+}
+
+.contact-us .col address .col-2 {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.contact-us .col address .col-2 a{
+	display: block;
+    color: white;
+}
+
+.contact-us .col address .col-2 i {
+	width: 40px;
+	height: 40px;
+	background-color: #4863f7;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}

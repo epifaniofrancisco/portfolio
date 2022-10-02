@@ -6,193 +6,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epifânio Francisco | Desenvolvedor Frontend</title>
-    <link rel="stylesheet" href="css/style.css">
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@300;400;500&display=swap"
-        rel="stylesheet">
-
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/089babe34a.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <p class="logo">Epifânio Francisco</p>
+<body class="">
+    <!-- Cabeçalho -->
+    <header class="container mt-2 p-0">
 
-        <nav>
-            <ul>
-                <li><a href="">Início</a></li>
-                <li>
-                    <a href="">Serviços</a>
-                </li>
-                <li>
-                    <a href="">habilidades</a>
-                </li>
-                <li>
-                    <a href="">Projectos</a>
-                </li>
-                <li>
-                    <a href="">Contactos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
 
-            <button href="#" class="btn curriculum-btn">Download CV</button>
+            <a href="index.html" class="navbar-brand fs-3">Epifânio Francisco</a>
+
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                class="navbar-toggler d-flex d-lg-none flex-column justify-content-around" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Sobre mim</a>
+                    </li>
+                    <li class="nav-item active ms-3">
+                        <a href="#" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item active ms-3">
+                        <a href="#" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item active ms-3">
+                        <a href="#" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item active ms-3">
+                        <a href="#" class="nav-link">Contactos</a>
+                    </li>
+
+                    <button class="btn ms-3 my-btn-primary">Download CV</button>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Sobre mim -->
-        <section class="about-me">
-            <div class="column">
-                <h1>Olá, Eu sou <br> <span id="nome">Epifânio Francisco</span> <br> Desenvolvedor Frontend</h1>
-                <p>Sou o Epifânio, desenvolvedor com maior foco em desenvolvimento Front End. Atualmente trabalho como
-                    freelancer com projetos de tamanho pequeno, médio e grande porte. Gosto de estar sempre aprendendo
-                    coisas novas e continuar subindo cada dia mais, rumo ao espaço.</p>
+    <!-- Sobre mim | Hero -->
+    <section class="container p-lg-0 my-5 about-me">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="copy" data-aos="fade-up" data-aos-duration="3000">
+                    <h1 class="my-3 text-introduction-title">
+                        Olá, Eu sou o <span>Epifânio Francisco</span> Desenvolvedor Frontend
+                    </h1>
+                    <p class="my-2 text-about-me-description">
+                        Sou o Epifânio, desenvolvedor com maior foco em desenvolvimento Front End. Atualmente trabalho
+                        como freelancer com projetos de tamanho pequeno, médio e grande porte. Gosto de estar sempre
+                        aprendendo coisas novas e continuar subindo cada dia mais, rumo ao espaço.
+                    </p>
+                    <div class="mt-5 mb-3 social-medias">
+                        <h3>Minhas redes sociais</h3>
 
-                <button class="btn curriculum-btn">Download CV</button>
-            </div>
-
-            <div class="about-me-img"></div>
-        </section>
-
-        <!-- Meus serviços -->
-        <section class="services">
-
-            <h1>Meus serviços</h1>
-
-            <div class="services-cards">
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Desenvolvimento de Sites</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam accusantium.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Desenvolvimento de Sites</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam accusantium.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Desenvolvimento de Sites</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam accusantium.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Minhas habilidades e ferramentas -->
-        <section class="my-skills">
-            <h2>Minhas <span>habilidades</span></h2>
-
-            <div class="skills-group">
-                <div class="rectangle rectangle-short">
-                    <img src="img/html.svg" alt="" class="skill">
-                    <span>HTML5</span>
-                </div>
-                <div class="rectangle rectangle-short">
-                    <img src="img/css-3.svg" alt="" class="skill">
-                    <span>CSS3</span>
-                </div>
-                <div class="rectangle">
-                    <img src="img/logo-javascript.svg" alt="" class="skill">
-                    <span>JavaScript</span>
-                </div>
-                <div class="rectangle">
-                    <img src="img/bootstrap-4.svg" alt="" class="skill">
-                    <span>Bootstrap</span>
-                </div>
-                <div class="rectangle">
-                    <img src="img/wordpress-blue.svg" alt="" class="skill">
-                    <span>WordPress</span>
-                </div>
-                <div class="rectangle">
-                    <img src="img/adobe-xd-2.svg" alt="" class="skill">
-                    <span>Adobe XD</span>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- Meus projectos -->
-        <section class="projects">
-            <div class="row">
-                <div class="text">
-                    <h2>Projectos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum necessitatibus.</p>
-                </div>
-
-                <div class="col">
-                    <div class="row">
-                        <button class="btn btn-projects active">Todos Projectos</button>
-                        <button class="btn-projects">Projectos Pessoais</button>
-                        <button class="btn-projects">Projectos Profissionais</button>
+                        <ul class="list-inline social-medias">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    <button class="btn my-3 my-btn-primary">Download CV</button>
+                </div>
+            </div>
+            <div class="col-md-6 about-me-img">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Meus serviços -->
+    <section class="container p-lg-0 my-services">
+        <h2>Meus Serviços</h2>
+
+        <div class="row p-lg-0 mt-5 justify-content-between">
+            <div class="card text-center">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body mt-2">
+                    <h5 class="card-title">Desenvolvimento Web</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
 
-            <div class="projects-cards">
-                <div class="card">
+            <div class="card text-center mt-3 mt-md-0 mt-lg-0">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body mt-2">
+                    <h5 class="card-title">Desenvolvimento Web</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
-                <div class="card">
-
-                </div>
-                <div class="card">
-
+            </div>
+            <div class="card text-center mt-3 mt-lg-0">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body mt-2">
+                    <h5 class="card-title">Desenvolvimento Web</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
 
-            <button class="btn all-projects">Todos Projectos</button>
-        </section>
 
-        <!-- Contactos -->
-        <section class="contact-us">
-            <div class="column">
-                <h1>Contactos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, debitis. Nemo excepturi minus
-                    nulla.</p>
+        </div>
 
-                <div class="col">
-                    <address>
-                        <div class="col-2">
-                            <i class="fa-solid fa-phone"></i>
-                            <div class="">
-                                <span>Telefone</span>
-                                <a href="#">+244 995621921</a>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div class="">
-                                <span>Email</span>
-                                <a href="#">epifaniofrancisco03@gmail.com</a>
-                            </div>
-                        </div>
-                    </address>
-                </div>
+    </section>
+
+    <!-- Minhas Habilidades -->
+    <section class="container my-5 p-lg-0 my-services">
+        <h2>Meus Habilidades</h2>
+
+        <div class="row m-0 p-lg-0 mt-4 justify-content-between">
+            <div class="rectangle rectangle-short">
+                <img src="assets/img/html.svg" alt="" class="skill-img">
+                <span>HTML5</span>
             </div>
-
-            <div class="form-group">
-                <h3>Fale connosco</h3>
-                <form action="#">
-                    <div class="row">
-                        <input type="text" name="name" id="name" placeholder="Nome">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="row">
-                        <input type="tel" name="phone" id="phone" placeholder="Telefone">
-                        <input type="text" name="topic" id="topic" placeholder="Assunto">
-                    </div>
-
-                    <input type="text" name="textarea" id="textarea" placeholder="Digite a mensagem">
-                </form>
+            <div class="rectangle rectangle-short">
+                <img src="assets/img/css-3.svg" alt="" class="skill-img">
+                <span>CSS3</span>
             </div>
-        </section>
-    </main>
+            <div class="rectangle">
+                <img src="assets/img/logo-javascript.svg" alt="" class="skill-img">
+                <span>JavaScript</span>
+            </div>
+            <div class="rectangle">
+                <img src="assets/img/bootstrap-4.svg" alt="" class="skill-img">
+                <span>Bootstrap</span>
+            </div>
+            <div class="rectangle">
+                <img src="assets/img/wordpress-blue.svg" alt="" class="skill-img">
+                <span>WordPress</span>
+            </div>
+            <div class="rectangle">
+                <img src="assets/img/adobe-xd-2.svg" alt="" class="skill-img">
+                <span>Adobe XD</span>
+            </div>
+        </div>
 
+    </section>
+
+    <!-- JS -->
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
