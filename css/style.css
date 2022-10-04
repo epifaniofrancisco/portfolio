@@ -18,35 +18,78 @@ body {
 	position: relative;
 }
 
+/* Botões */
+
 .my-btn-primary,
 .my-projects-btn.active {
 	width: 170px;
-	height: 2.7rem;
+	height: 2.5rem;
 	color: #fffefd;
-	background-color: #4863f7;
+	background: linear-gradient(to left, #005c97, #363795);
 }
 
-.my-btn-primary:hover {
+.my-btn-primary:hover, .my-projects-btn.active:hover {
 	color: #fffefd;
-	background-color: #0825c6;
+	background: linear-gradient(to left, #00588E, #32348B);
+}
+
+/* Redes sociais */
+
+.social-medias h3 {
+	font-size: 1.2rem;
+}
+
+.list-inline-item a , footer .copyright a {
+	color: white;
+}
+
+.list-inline-item , footer .copyright a {
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.list-inline-item:hover {
+	background: linear-gradient(to left, #005c97, #363795);
+	color: #fff;
+	border-color: #363795;
+}
+
+.list-inline-item, footer .copyright a {
+	width: 43px;
+	height: 43px;
+	font-size: 23px;
+	border: 1px solid;
+	border-radius: 2px;
+	line-height: 43px;
+	text-align: center;
 }
 
 /* Links de navegação */
+
+.navbar .navbar-brand {
+	color: #363795;
+}
+
+.navbar .navbar-brand:hover {
+	color: #32348B;
+}
+
 .navbar .navbar-nav .nav-link {
 	color: #fffefd;
 	font-size: 1.2rem;
 }
 
 .navbar .navbar-nav .nav-link.active {
-	color: #4863f7;
+	color: #363795;
 	font-size: 1.2rem;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-	color: #4863f7 !important;
+	color: #32348B !important;
 }
 
 /* Ícone de menu hambúrguer */
+
 .navbar-toggler {
 	width: 20px;
 	height: 20px;
@@ -77,6 +120,7 @@ body {
 }
 
 /* Quando a navbar colapsar */
+
 .navbar-toggler.collapsed .top-bar {
 	position: absolute;
 	top: 0px;
@@ -114,49 +158,26 @@ body {
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-	background: linear-gradient(90deg, #4863f7, #0825c6);
+	background: linear-gradient(to left, #005c97, #363795);
 }
 
 /* Sobre mim */
 
 .about-me h1 span {
+	background-color: #363795;
+    background-image: linear-gradient(to left, #005c97, #363795);
+    background-size: 100%;
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 	display: block;
-	color: #4863f7;
-}
-
-/* Redes sociais */
-.social-medias h3 {
-	font-size: 1.2rem;
-}
-
-.list-inline-item a {
-	color: white;
-}
-
-.list-inline-item {
-	cursor: pointer;
-	transition: background-color 0.5s;
-}
-
-.list-inline-item:hover {
-	background-color: #4863f7;
-	color: #fff;
-	border-color: #4863f7;
-}
-
-.list-inline-item {
-	width: 43px;
-	height: 43px;
-	font-size: 23px;
-	border: 1px solid;
-	border-radius: 2px;
-	line-height: 43px;
-	text-align: center;
 }
 
 .about-me .about-me-img {
 	height: 35rem;
-	background-color: #4863f7;
+	background: linear-gradient(to right, #005c97, #363795);
 }
 
 /* Meus serviços */
@@ -168,11 +189,12 @@ body {
 }
 
 .my-services .row .card:hover {
-	border: 1px solid #4863f7;
+	border: 1px solid;
+	border-color: #363795;
 }
 
 .my-services .row .card i {
-	color: #4863f7;
+	color: #363795;
 	font-size: 3rem;
 	margin-top: 2rem;
 }
@@ -194,7 +216,7 @@ body {
 }
 
 .rectangle:hover {
-	background: linear-gradient(90deg, hsla(231, 92%, 63%, 1) 0%, hsla(231, 72%, 63%, 1) 100%);;
+	background: linear-gradient(to left, #005c97, #363795);
 }
 
 .rectangle span {
@@ -210,11 +232,11 @@ body {
 
 /* Meus projetos */
 .my-projects-btn {
-	background-color: #1b1c1e;
+	background: linear-gradient(#1b1c1e, #1b1c1e);
 }
 
 .my-projects-btn:hover {
-	background-color: #4863f7;
+	background: linear-gradient(to left, #005c97, #363795);
 }
 
 .my-projects .projects-list .card {
@@ -260,9 +282,8 @@ body {
 .my-projects .projects-list .card-body {
 	position: relative;
 	z-index: 3;
-	color: #4863f7;
+	color: #363795;
 	opacity: 0;
-
 	transform: translateY(90px);
 	transition: 0.5s all;
 }
@@ -280,18 +301,25 @@ body {
 	width: 5rem;
 	height: 35px;
 	color: white;
-	background-color: #4863f7;
+	background: linear-gradient(to left, #005c97, #363795);
 	cursor: pointer;
 }
 
 .card-body .btn:hover {
 	color: white;
-	background-color: #0825c6;
+	background: linear-gradient(to left, #00588E, #32348B);
 }
 
 /* Contacte-me */
 .contact-me h2 span {
-	color: #4863f7;
+	background-color: #363795;
+    background-image: linear-gradient(to left, #005c97, #363795);
+    background-size: 100%;
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .form-control:focus {
@@ -321,6 +349,7 @@ body {
 	pointer-events: none;
 	border-bottom: 1px solid white;
 }
+
 .my-input-group label::after {
 	content: "";
 	position: absolute;
@@ -328,7 +357,7 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	border-bottom: 3px solid #4863f7;
+	border-bottom: 3px solid #363795;
 	transform: translateX(-100%);
 	transition: all 0.3s ease;
 }
@@ -352,7 +381,7 @@ body {
 	transform: translateY(-150%);
 	font-size: 14px;
 	left: 0px;
-	color: #4863f7;
+	color: #363795;
 }
 
 .my-input-group input:focus + .label-name::after,
@@ -361,11 +390,9 @@ body {
 	transform: translateX(0%);
 }
 
-
-
 /* Rodapé | Footer */
 footer h4 {
-	color: #4863f7;
+	color: #363795;
 }
 
 footer p > a {
@@ -389,7 +416,7 @@ footer .underline-hover-effect::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #4863f7;
+    background: linear-gradient(to left, #005c97, #363795);
     transition: width 0.25s ease-out;
 }
 
@@ -404,8 +431,8 @@ footer .copyright {
 	border-top: 1px solid #333;
 }
 
-footer .fa-arrow-up {
-	color: white;
+footer .copyright a:hover {
+	color: #363795;
 }
 
 /* TODO: Mudar o max-width para 767px */
@@ -418,5 +445,9 @@ footer .fa-arrow-up {
 
 	.rectangle {
 		margin-top: 1rem;
+	}
+
+	.my-projects .projects-list .card:not(:first-child) {
+		margin-top: 2rem;
 	}
 }
