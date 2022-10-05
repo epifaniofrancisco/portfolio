@@ -431,8 +431,13 @@ footer .copyright {
 	border-top: 1px solid #333;
 }
 
-footer .copyright a:hover {
-	color: #363795;
+.top {
+	color: white;
+	background-color: #363795;
+	position: fixed;
+	bottom: 2.1rem;
+	right: 5rem;
+	border: 1px solid #363795 !important;
 }
 
 /* TODO: Mudar o max-width para 767px */
@@ -449,5 +454,10 @@ footer .copyright a:hover {
 
 	.my-projects .projects-list .card:not(:first-child) {
 		margin-top: 2rem;
+	}
+
+	.top {
+		bottom: 2.1rem;
+		right: 1.5rem;
 	}
 }
