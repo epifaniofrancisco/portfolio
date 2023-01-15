@@ -1,9 +1,33 @@
-body {
-	color: #fffefd !important;
-	background-color: #1b1c1e;
+:root {
+	--primary-color: #00b2ff;
+	--text-white: #ffffff;
+	--background-color: #121212;
 }
 
-/* Todos elementos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	color: var(--text-white) !important;
+	background-color: var(--background-color);
+}
+
 .btn,
 .btn:focus,
 .btn:active,
@@ -19,22 +43,20 @@ body {
 }
 
 /* Botões */
-
 .my-btn-primary,
 .my-projects-btn.active {
 	width: 170px;
 	height: 2.5rem;
-	color: #fffefd;
-	background: linear-gradient(to left, #005c97, #363795);
+	color: var(--text-white);
+	background: var(--primary-color)
 }
 
 .my-btn-primary:hover, .my-projects-btn.active:hover {
-	color: #fffefd;
+	color: var(--text-white);
 	background: linear-gradient(to left, #00588E, #32348B);
 }
 
 /* Redes sociais */
-
 .social-medias h3 {
 	font-size: 1.2rem;
 }
@@ -49,9 +71,9 @@ body {
 }
 
 .list-inline-item:hover {
-	background: linear-gradient(to left, #005c97, #363795);
+	background: linear-gradient(to left, #005c97, var(--primary-color));
 	color: #fff;
-	border-color: #363795;
+	border-color: var(--primary-color);
 }
 
 .list-inline-item, footer .copyright a {
@@ -67,7 +89,7 @@ body {
 /* Links de navegação */
 
 .navbar .navbar-brand {
-	color: #363795;
+	color: var(--primary-color);
 }
 
 .navbar .navbar-brand:hover {
@@ -75,12 +97,12 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-	color: #fffefd;
+	color: var(--text-white);
 	font-size: 1.2rem;
 }
 
 .navbar .navbar-nav .nav-link.active {
-	color: #363795;
+	color: var(--primary-color);
 	font-size: 1.2rem;
 }
 
@@ -89,7 +111,6 @@ body {
 }
 
 /* Ícone de menu hambúrguer */
-
 .navbar-toggler {
 	width: 20px;
 	height: 20px;
@@ -158,14 +179,14 @@ body {
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-	background: linear-gradient(to left, #005c97, #363795);
+	background: linear-gradient(to left, #005c97, var(--primary-color));
 }
 
 /* Sobre mim */
 
 .about-me h1 span {
-	background-color: #363795;
-    background-image: linear-gradient(to left, #005c97, #363795);
+	background-color: var(--primary-color);
+    background-image: linear-gradient(to left, #005c97, var(--primary-color));
     background-size: 100%;
 	background-clip: text;
     -webkit-background-clip: text;
@@ -177,24 +198,24 @@ body {
 
 .about-me .about-me-img {
 	height: 35rem;
-	background: linear-gradient(to right, #005c97, #363795);
+	background: linear-gradient(to right, #005c97, var(--primary-color));
 }
 
 /* Meus serviços */
 .my-services .row .card {
 	width: 16rem;
-	color: #fffefd;
+	color: var(--text-white);
 	background-color: #2a2c2e;
 	border-radius: 10px;
 }
 
 .my-services .row .card:hover {
 	border: 1px solid;
-	border-color: #363795;
+	border-color: var(--primary-color);
 }
 
 .my-services .row .card i {
-	color: #363795;
+	color: var(--primary-color);
 	font-size: 3rem;
 	margin-top: 2rem;
 }
@@ -216,7 +237,7 @@ body {
 }
 
 .rectangle:hover {
-	background: linear-gradient(to left, #005c97, #363795);
+	background: linear-gradient(to left, #005c97, var(--primary-color));
 }
 
 .rectangle span {
@@ -236,7 +257,7 @@ body {
 }
 
 .my-projects-btn:hover {
-	background: linear-gradient(to left, #005c97, #363795);
+	background: linear-gradient(to left, #005c97, var(--primary-color));
 }
 
 .my-projects .projects-list .card {
@@ -282,7 +303,7 @@ body {
 .my-projects .projects-list .card-body {
 	position: relative;
 	z-index: 3;
-	color: #363795;
+	color: var(--primary-color);
 	opacity: 0;
 	transform: translateY(90px);
 	transition: 0.5s all;
@@ -301,7 +322,7 @@ body {
 	width: 5rem;
 	height: 35px;
 	color: white;
-	background: linear-gradient(to left, #005c97, #363795);
+	background: linear-gradient(to left, #005c97, var(--primary-color));
 	cursor: pointer;
 }
 
@@ -312,8 +333,8 @@ body {
 
 /* Contacte-me */
 .contact-me h2 span {
-	background-color: #363795;
-    background-image: linear-gradient(to left, #005c97, #363795);
+	background-color: var(--primary-color);
+    background-image: linear-gradient(to left, #005c97, var(--primary-color));
     background-size: 100%;
 	background-clip: text;
     -webkit-background-clip: text;
@@ -357,7 +378,7 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	border-bottom: 3px solid #363795;
+	border-bottom: 3px solid var(--primary-color);
 	transform: translateX(-100%);
 	transition: all 0.3s ease;
 }
@@ -381,7 +402,7 @@ body {
 	transform: translateY(-150%);
 	font-size: 14px;
 	left: 0px;
-	color: #363795;
+	color: var(--primary-color);
 }
 
 .my-input-group input:focus + .label-name::after,
@@ -392,7 +413,7 @@ body {
 
 /* Rodapé | Footer */
 footer h4 {
-	color: #363795;
+	color: var(--primary-color);
 }
 
 footer p > a {
@@ -416,7 +437,7 @@ footer .underline-hover-effect::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(to left, #005c97, #363795);
+    background: linear-gradient(to left, #005c97, var(--primary-color));
     transition: width 0.25s ease-out;
 }
 
@@ -433,11 +454,11 @@ footer .copyright {
 
 .top {
 	color: white;
-	background-color: #363795;
+	background-color: var(--primary-color);
 	position: fixed;
 	bottom: 2.1rem;
 	right: 5rem;
-	border: 1px solid #363795 !important;
+	border: 1px solid var(--primary-color) !important;
 }
 
 /* TODO: Mudar o max-width para 767px */
