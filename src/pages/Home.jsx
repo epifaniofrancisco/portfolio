@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BtnPrimaryIcon from "../components/buttons/BtnPrimaryIcon";
+import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
 				</Row>
 			</Container>
 			<Container></Container>
+			<Footer />
 		</>
 	);
 }

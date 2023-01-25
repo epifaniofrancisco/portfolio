@@ -1,0 +1,73 @@
+footer h4 {
+	color: $primary-color;
+}
+
+.list-inline-item, .copyright a {
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.list-inline-item, .copyright a {
+	width: 43px;
+	height: 43px;
+	font-size: 23px;
+	border: 1px solid;
+	border-radius: 5px;
+	line-height: 45px;
+	text-align: center;
+
+	&:hover {
+		background: $primary-color;
+		color: $text-white;
+		border-color: $primary-color;
+	}
+
+    & a:hover {
+        color: $text-white;
+    }
+}
+
+
+footer p > a {
+	color: $text-white--opacity-8;
+	text-decoration: none;
+
+	&:hover {
+		color: $text-white;
+	}
+}
+
+.underline-hover-effect {
+	position: relative;
+
+	&::before {
+		width: 0;
+		height: 2px;
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: $primary-color;
+		transition: width 0.25s ease-out;
+	}
+
+	&:hover::before {
+		width: 102%;
+		left: 0;
+		right: auto;
+	}
+}
+
+.copyright {
+	color: $text-white--opacity-8;
+	border-top: 1px solid #333;
+}
+
+.top {
+	color: $text-white;
+	background-color: var(--primary-color);
+	position: fixed;
+	bottom: 2.1rem;
+	right: 5rem;
+	border: 1px solid var(--primary-color) !important;
+}
