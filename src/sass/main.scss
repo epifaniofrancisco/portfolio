@@ -1,7 +1,11 @@
-@import 'abstracts/variables';
+@import "abstracts/variables";
 
-@import 'base/reset';
+@import "base/reset";
 
-@import 'layout/header';
+@import "components/buttons";
 
-@import 'themes/dark';
+@import "layout/header";
+
+@import "pages/home";
+
+@import "themes/dark";
