@@ -1,3 +1,7 @@
-@use 'abstracts/variables';
+@import 'abstracts/variables';
 
-@use 'base/reset';
+@import 'base/reset';
+
+@import 'layout/header';
+
+@import 'themes/dark';

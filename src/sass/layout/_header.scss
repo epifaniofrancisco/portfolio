@@ -1,0 +1,17 @@
+.navbar-brand {
+    font-size: 1.75rem;
+    color: $primary-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: $text-white;
+
+    &:hover {
+        color: $text-white--opacity-8;
+    }
+}
