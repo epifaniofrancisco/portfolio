@@ -1,9 +1,11 @@
 .btn--primary {
-	width: 180px;
+	width: 250px;
 	height: 2.5rem;
     font-size: 1.15rem;
 	color: $text-white;
 	background: $primary-color;
+    border-radius: 8px;
+    padding: 0 3rem;
 
     &:hover {
         color: $text-white;
