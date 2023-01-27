@@ -1,17 +1,30 @@
-.navbar-brand {
-    font-size: 1.75rem;
-    color: $primary-color;
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-bottom: 1px solid var(--color-gray-line);
+}
 
-    &:hover {
-        color: $secondary-color;
-    }
+.navbar-brand {
+	font-size: 1.75rem;
+	color: $primary-color;
+
+	&:hover {
+		color: $secondary-color;
+	}
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    color: $text-white;
+	font-size: 1.2rem;
+	color: $text-white;
 
-    &:hover {
-        color: $text-white--opacity-7;
-    }
+	&:hover {
+		color: $text-white--opacity-7;
+	}
 }

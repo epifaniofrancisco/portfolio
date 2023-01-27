@@ -13,9 +13,9 @@ function Footer() {
                             Juntando o foco e a prática posso trazer as melhores
                             experiências para meus clientes.
                         </p>
-                        <div class="mt-3 mb-3 social-medias">
-                            <ul class="list-inline social-medias">
-                                <li class="list-inline-item">
+                        <div className="mt-3 mb-3 social-medias">
+                            <ul className="list-inline social-medias">
+                                <li className="list-inline-item">
                                     <a
                                         href="https://www.linkedin.com/in/epif%C3%A2nio-francisco-3a44741ba/"
                                         target="_blank"
@@ -23,7 +23,7 @@ function Footer() {
                                         <ion-icon name="logo-linkedin"></ion-icon>{" "}
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li className="list-inline-item">
                                     <a
                                         href="https://github.com/epifaniofrancisco"
                                         target="_blank"
@@ -31,7 +31,7 @@ function Footer() {
                                         <ion-icon name="logo-github"></ion-icon>{" "}
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li className="list-inline-item">
                                     <a
                                         href="https://www.facebook.com/profile.php?id=100075626726544"
                                         target="_blank"
@@ -43,29 +43,29 @@ function Footer() {
                         </div>
                     </Col>
                     <Col md={1} className="mx-auto">
-                        <h5 class="mb-4">Secções</h5>
+                        <h5 className="mb-4">Secções</h5>
                         <p>
-                            <a href="#about-me" class="underline-hover-effect">
+                            <a href="#about-me" className="underline-hover-effect">
                                 Sobre mim
                             </a>
                         </p>
                         <p>
-                            <a href="#my-skills" class="underline-hover-effect">
+                            <a href="#my-skills" className="underline-hover-effect">
                                 Habilidades
                             </a>
                         </p>
                         <p>
-                            <a href="#my-projects" class="underline-hover-effect">
+                            <a href="#my-projects" className="underline-hover-effect">
                                 Projetos
                             </a>
                         </p>
                     </Col>
                     <Col md={1} className="mx-auto">
-                        <h5 class="mb-4">Contacto</h5>
+                        <h5 className="mb-4">Contacto</h5>
                         <p>
                             <a
                                 href="mailto:epifaniofrancisco03@gmail.com"
-                                class="underline-hover-effect"
+                                className="underline-hover-effect"
                                 target="_blank"
                             >
                                 Email
@@ -74,7 +74,7 @@ function Footer() {
                         <p>
                             <a
                                 href="tel:244995621921"
-                                class="underline-hover-effect"
+                                className="underline-hover-effect"
                                 target="_blank"
                             >
                                 Telefone
@@ -83,7 +83,7 @@ function Footer() {
                         <p>
                             <a
                                 href="https://wa.me/244995621921"
-                                class="underline-hover-effect"
+                                className="underline-hover-effect"
                                 target="_blank"
                             >
                                 Whatsapp
@@ -91,26 +91,26 @@ function Footer() {
                         </p>
                     </Col>
                     <Col md={2} className="mx-auto">
-                        <h5 class="mb-4">Serviços</h5>
+                        <h5 className="mb-4">Serviços</h5>
                         <p>
-                            <a href="" class="underline-hover-effect">
+                            <a href="" className="underline-hover-effect">
                                 Construção de site
                             </a>
                         </p>
                         <p>
-                            <a href="" class="underline-hover-effect">
+                            <a href="" className="underline-hover-effect">
                                 Criação de aplicativos
                             </a>
                         </p>
                         <p>
-                            <a href="" class="underline-hover-effect">
+                            <a href="" className="underline-hover-effect">
                                 Web Design
                             </a>
                         </p>
                     </Col>
                 </Row>
                 <Row className="justify-content-between mt-3 py-4 copyright">
-                    <Col md={6} class="col-md-6 content">
+                    <Col md={6} className="col-md-6 content">
                         <span>
                             © Copyright 2022 <strong>Epifânio Francisco</strong>
                             . <br />
@@ -118,7 +118,7 @@ function Footer() {
                         </span>
                     </Col>
                     <Container>
-                                <a href="#header" class="top">
+                                <a href="#header" className="top">
                                     <ion-icon name="arrow-up-outline"></ion-icon>
                                 </a>
                             </Container>
