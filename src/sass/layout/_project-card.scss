@@ -1,0 +1,45 @@
+.card {
+    color: $text-black;
+	& .row {
+		display: none;
+	}
+
+    &:hover {
+        .row {
+            display: flex;
+        }
+    }
+}
+
+.card-title {
+	font-weight: 600;
+}
+
+.card__description {
+	text-align: justify;
+}
+
+.button-left-icon {
+	background-color: $background-color-dark;
+	width: 150px;
+
+	&:hover {
+		background-color: #373737;
+	}
+}
+
+.button-left-icon--github .button-left-icon {
+	color: $text-black;
+	background-color: $text-white;
+	border: 1px solid $text-black;
+
+	&:hover {
+		color: $text-white;
+		background-color: #000;
+	}
+}
+
+.button-left-icon i {
+	margin-right: 10px;
+	margin-left: 0;
+}
