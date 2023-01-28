@@ -1,13 +1,29 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import BtnPrimary from "../components/buttons/BtnPrimary";
-import BtnPrimaryIcon from "../components/buttons/BtnPrimaryIcon";
+import BtnPrimaryIconDownload from "../components/buttons/BtnPrimaryIconDownload";
 import InputLabelAnimation from "../components/inputs/InputLabelAnimation";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import ProjectCard from "../components/layout/ProjectCard";
 import Technologies from "../components/layout/Technologies";
 import TypeWriter from "../components/TypeWritter";
+
+// Images
+import noTeuKubicoImage from "/src/assets/img/projects/no-teu-kubico.png"
+import verificadorBiImage from "/src/assets/img/projects/verificador-bi.png"
+import rocketnewsImage from "/src/assets/img/projects/rocketnews.png"
+import lojaOnlineImage from "/src/assets/img/projects/online-shop.png"
+import transportOneImage from "/src/assets/img/projects/transport-one.png"
+import bibliotecaLuandaImage from "/src/assets/img/projects/biblioteca-luanda.png"
+import colegioMImage from "/src/assets/img/projects/colegio-m.png"
+import jogoDigitacaoImage from "/src/assets/img/projects/jogo-digitacao.png"
+import tempoLeituraImage from "/src/assets/img/projects/tempo-de-leitura.png"
+import contactMeImage from "/src/assets/img/cross-platform-software-pana.svg"
+import introductionImage from "/src/assets/img/code-typing-bro.svg"
+
+// PDF
+import meuCV from "/src/assets/pdf/meu-cv.pdf"
 
 const words = ["Epifânio Francisco", "Desenvolvedor FrontEnd"];
 
@@ -17,7 +33,7 @@ const projectsItem = [
 		title: "No Teu Kubico",
 		demo: "https://www.noteukubico.com/",
 		github: "https://projetoprivado",
-		image: "./src/assets/img/projects/no-teu-kubico.png",
+		image: noTeuKubicoImage,
 		alt: "No teu kubico inicio",
 	},
 	{
@@ -25,7 +41,7 @@ const projectsItem = [
 		title: "Verificador de BI",
 		demo: "https://verificadorbiangola.vercel.app/",
 		github: "https://github.com/epifaniofrancisco/verificador-de-bi",
-		image: "./src/assets/img/projects/verificador-bi.png",
+		image: verificadorBiImage,
 		alt: "Verificador de BI",
 	},
 	{
@@ -33,7 +49,7 @@ const projectsItem = [
 		title: "RocketNews",
 		demo: "https://rocketnews.vercel.app/",
 		github: "https://github.com/epifaniofrancisco/rocketnews",
-		image: "./src/assets/img/projects/rocketnews.png",
+		image: rocketnewsImage,
 		alt: "Rocketnews",
 	},
 	{
@@ -41,7 +57,7 @@ const projectsItem = [
 		title: "Loja Online",
 		demo: "https://online-shop-react-gules.vercel.app/",
 		github: "https://github.com/epifaniofrancisco/online-shop-react",
-		image: "./src/assets/img/projects/online-shop.png",
+		image: lojaOnlineImage,
 		alt: "Loja Online",
 	},
 	{
@@ -49,7 +65,7 @@ const projectsItem = [
 		title: "Transport One",
 		demo: "http://transport-one.vercel.app/",
 		github: "https://projetoprivado",
-		image: "./src/assets/img/projects/transport-one.png",
+		image: transportOneImage,
 		alt: "Transport One",
 	},
 	{
@@ -57,7 +73,7 @@ const projectsItem = [
 		title: "Biblioteca de Luanda",
 		demo: "https://epifaniofrancisco.github.io/biblioteca-luanda/",
 		github: "https://github.com/epifaniofrancisco/biblioteca-luanda",
-		image: "./src/assets/img/projects/biblioteca-luanda.png",
+		image: bibliotecaLuandaImage,
 		alt: "Biblioteca de Luanda",
 	},
 	{
@@ -65,7 +81,7 @@ const projectsItem = [
 		title: "Colégio M",
 		demo: "http://colegio-m.vercel.app/",
 		github: "https://github.com/epifaniofrancisco/colegio-m",
-		image: "./src/assets/img/projects/colegio-m.png",
+		image: colegioMImage,
 		alt: "Colégio M",
 	},
 	{
@@ -73,7 +89,7 @@ const projectsItem = [
 		title: "Jogo da Digitação",
 		demo: "https://epifaniofrancisco.github.io/jogo-digitacao-js/",
 		github: "https://github.com/epifaniofrancisco/jogo-digitacao-js",
-		image: "./src/assets/img/projects/jogo-digitacao.png",
+		image: jogoDigitacaoImage,
 		alt: "Jogo da digitação",
 	},
 	{
@@ -81,7 +97,7 @@ const projectsItem = [
 		title: "Tempo de Leitura",
 		demo: "https://epifaniofrancisco.github.io/tempo-de-leitura/",
 		github: "https://github.com/epifaniofrancisco/tempo-de-leitura",
-		image: "./src/assets/img/projects/tempo-de-leitura.png",
+		image: tempoLeituraImage,
 		alt: "Tempo de leitura",
 	},
 ];
@@ -124,8 +140,8 @@ function AboutMe() {
 							ao espaço.
 						</p>
 
-						<BtnPrimaryIcon
-							link="#"
+						<BtnPrimaryIconDownload
+							link={meuCV}
 							text="Baixar currículo"
 							iconName="download-outline"
 						/>
@@ -173,7 +189,7 @@ function ContactMe() {
 					<Col md={7}>
 						<div className="w-100 h-100">
 							<img
-								src="./src/assets/img/cross-platform-software-pana.svg"
+								src={contactMeImage}
 								alt="Cross platform software"
 								className="img-fluid"
 							/>
@@ -270,7 +286,7 @@ function Introduction() {
 					<Col md={6}>
 						<div className="w-100 h-100">
 							<img
-								src="./src/assets/img/code-typing-bro.svg"
+								src={introductionImage}
 								alt="Code Typing"
 								className="img-fluid"
 							/>
