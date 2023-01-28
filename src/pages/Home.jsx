@@ -14,30 +14,75 @@ const words = ["Epifânio Francisco", "Desenvolvedor FrontEnd"];
 const projectsItem = [
 	{
 		id: 1,
-		title: "1",
-		description: "1",
-		demo: "1",
-		github: "1",
-		image: "1",
-		alt: "1",
+		title: "No Teu Kubico",
+		demo: "https://www.noteukubico.com/",
+		github: "https://projetoprivado",
+		image: "./src/assets/img/projects/no-teu-kubico.png",
+		alt: "No teu kubico inicio",
 	},
 	{
 		id: 2,
-		title: "1",
-		description: "1",
-		demo: "1",
-		github: "1",
-		image: "1",
-		alt: "1",
+		title: "Verificador de BI",
+		demo: "https://verificadorbiangola.vercel.app/",
+		github: "https://github.com/epifaniofrancisco/verificador-de-bi",
+		image: "./src/assets/img/projects/verificador-bi.png",
+		alt: "Verificador de BI",
 	},
 	{
 		id: 3,
-		title: "1",
-		description: "1",
-		demo: "1",
-		github: "1",
-		image: "1",
-		alt: "1",
+		title: "RocketNews",
+		demo: "https://rocketnews.vercel.app/",
+		github: "https://github.com/epifaniofrancisco/rocketnews",
+		image: "./src/assets/img/projects/rocketnews.png",
+		alt: "Rocketnews",
+	},
+	{
+		id: 4,
+		title: "Loja Online",
+		demo: "https://online-shop-react-gules.vercel.app/",
+		github: "https://github.com/epifaniofrancisco/online-shop-react",
+		image: "./src/assets/img/projects/online-shop.png",
+		alt: "Loja Online",
+	},
+	{
+		id: 5,
+		title: "Transport One",
+		demo: "http://transport-one.vercel.app/",
+		github: "https://projetoprivado",
+		image: "./src/assets/img/projects/transport-one.png",
+		alt: "Transport One",
+	},
+	{
+		id: 6,
+		title: "Biblioteca de Luanda",
+		demo: "https://epifaniofrancisco.github.io/biblioteca-luanda/",
+		github: "https://github.com/epifaniofrancisco/biblioteca-luanda",
+		image: "./src/assets/img/projects/biblioteca-luanda.png",
+		alt: "Biblioteca de Luanda",
+	},
+	{
+		id: 7,
+		title: "Colégio M",
+		demo: "http://colegio-m.vercel.app/",
+		github: "https://github.com/epifaniofrancisco/colegio-m",
+		image: "./src/assets/img/projects/colegio-m.png",
+		alt: "Colégio M",
+	},
+	{
+		id: 8,
+		title: "Jogo da Digitação",
+		demo: "https://epifaniofrancisco.github.io/jogo-digitacao-js/",
+		github: "https://github.com/epifaniofrancisco/jogo-digitacao-js",
+		image: "./src/assets/img/projects/jogo-digitacao.png",
+		alt: "Jogo da digitação",
+	},
+	{
+		id: 9,
+		title: "Tempo de Leitura",
+		demo: "https://epifaniofrancisco.github.io/tempo-de-leitura/",
+		github: "https://github.com/epifaniofrancisco/tempo-de-leitura",
+		image: "./src/assets/img/projects/tempo-de-leitura.png",
+		alt: "Tempo de leitura",
 	},
 ];
 
@@ -101,7 +146,6 @@ function ProjectsList() {
 		<ProjectCard
 			id={project.id}
 			title={project.title}
-			description={project.description}
 			previewLink={project.demo}
 			github={project.github}
 			image={project.image}
