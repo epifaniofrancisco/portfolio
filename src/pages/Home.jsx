@@ -187,7 +187,7 @@ function ContactMe() {
 				</Row>
 				<Row className="justify-content-between">
 					<Col md={7}>
-						<div className="w-100 h-100">
+						<div className="w-75 h-75 mx-auto">
 							<img
 								src={contactMeImage}
 								alt="Cross platform software"

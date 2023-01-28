@@ -1,16 +1,16 @@
 .card {
-    color: $text-black;
+	color: $text-black;
 	margin-top: 1.5rem;
 
 	& .card-body {
-		display: none;
+		display: block;
 	}
 
-    &:hover {
-        .card-body {
-            display: block;
-        }
-    }
+	&:hover {
+		.card-body {
+			display: block;
+		}
+	}
 }
 
 .card-title {
@@ -19,6 +19,7 @@
 }
 
 .card-text {
+	
 	.row > * {
 		width: auto;
 	}
@@ -26,12 +27,37 @@
 
 .button-left-icon {
 	background-color: $background-color-dark;
-	width: 150px;
+	width: 11rem;
+	padding: 0 1rem;
 
 	&:hover {
 		background-color: #373737;
 	}
 
+	@media (min-width: 992px) and (max-width: 1400px) {
+		& {
+			width: 7rem;
+		}
+	}
+
+	@media (min-width: 576px) and (max-width: 992px){
+		& {
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+
+	@media (max-width: 576px) {
+		& {
+			width: 8.5rem;
+		}
+	}
+
+	ion-icon {
+		width: 1rem;
+		height: 1rem;
+		margin-right: 10px;
+	}
 }
 
 .button-left-icon--github .button-left-icon {

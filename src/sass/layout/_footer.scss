@@ -1,17 +1,21 @@
-footer .row {
-	text-align: center;
+@media (max-width: 576px) {
+	footer .row {
+		text-align: center;
+	}
 }
 
 footer h4 {
 	color: $primary-color;
 }
 
-.list-inline-item, .copyright a {
+.list-inline-item,
+.copyright a {
 	cursor: pointer;
 	transition: background-color 0.5s;
 }
 
-.list-inline-item, .copyright a {
+.list-inline-item,
+.copyright a {
 	width: 43px;
 	height: 43px;
 	font-size: 23px;
@@ -26,11 +30,10 @@ footer h4 {
 		border-color: $primary-color;
 	}
 
-    & a:hover {
-        color: $text-white;
-    }
+	& a:hover {
+		color: $text-white;
+	}
 }
-
 
 footer p > a {
 	color: $text-white--opacity-8;
