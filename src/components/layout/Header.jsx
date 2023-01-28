@@ -7,11 +7,12 @@ function Header() {
 			<Navbar expand="lg" className="w-100 d-flex top-0">
 				<Container>
 					<Navbar.Brand href="index">Epifânio Francisco</Navbar.Brand>
-					<Navbar.Toggle aria-controls="navbarScroll" />
+					<Navbar.Toggle aria-controls="navbarScroll" className="navicon" ><span class=""></span>
+                <span class=""></span>
+                <span class=""></span></Navbar.Toggle>
 					<Navbar.Collapse id="navbarScroll">
 						<Nav
 							className="mx-auto my-2 my-lg-0"
-							style={{ maxHeight: "100px" }}
 							navbarScroll
 						>
 							<Nav.Link href="#home">Inicio</Nav.Link>

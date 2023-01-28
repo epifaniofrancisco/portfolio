@@ -10,7 +10,7 @@ function ProjectCard({ image, alt, github, previewLink, title }) {
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>
-                    <Row className='justify-content-between'>
+                    <Row className='justify-content-md-between'>
                         <div className="col-md-6">
                             <ButtonIconLeft link={previewLink} iconName="eye-outline" text="Preview" />
                         </div>

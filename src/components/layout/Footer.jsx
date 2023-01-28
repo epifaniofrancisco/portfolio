@@ -118,7 +118,7 @@ function Footer() {
                         </span>
                     </Col>
                     <Container>
-                                <a href="#header" className="top">
+                                <a href="#home" className="top">
                                     <ion-icon name="arrow-up-outline"></ion-icon>
                                 </a>
                             </Container>

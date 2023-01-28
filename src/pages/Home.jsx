@@ -196,7 +196,7 @@ function ContactMe() {
 						</div>
 					</Col>
 					<Col md={5}>
-						<form className="ms-5 needs-validation" novalidate>
+						<form className="ms-md-5">
 							<Row>
 								<InputLabelAnimation
 									type="text"
@@ -263,7 +263,7 @@ function Projects() {
 
 function Introduction() {
 	return (
-		<section id="home">
+		<section id="home" className="introduction">
 			<Container className="about-me my-5 p-lg-0">
 				<Row className="align-items-center">
 					<Col md={6}>
@@ -276,7 +276,7 @@ function Introduction() {
 								aprender.
 							</p>
 						</h1>
-						<Row className="introduction__btn">
+						<Row className="introduction__btn justify-content-center justify-content-md-start">
 							<BtnPrimary link="#projects" text="Ver projetos" />
 							<a href="#about-me" className="introduction__btn__more-me">
 								Sobre mim

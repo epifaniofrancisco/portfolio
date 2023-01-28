@@ -18,8 +18,10 @@
 	margin-bottom: 1rem;
 }
 
-.card__description {
-	text-align: justify;
+.card-text {
+	.row > * {
+		width: auto;
+	}
 }
 
 .button-left-icon {
@@ -29,6 +31,7 @@
 	&:hover {
 		background-color: #373737;
 	}
+
 }
 
 .button-left-icon--github .button-left-icon {

@@ -1,3 +1,7 @@
+footer .row {
+	text-align: center;
+}
+
 footer h4 {
 	color: $primary-color;
 }
@@ -70,4 +74,8 @@ footer p > a {
 	bottom: 2.1rem;
 	right: 5rem;
 	border: 1px solid var(--primary-color) !important;
+
+	@media (max-width: 576px) {
+		right: 1rem;
+	}
 }
