@@ -3,3 +3,14 @@ h1 span {
     color: $primary-color;
 }
 
+.contact-me h2 span {
+	background-color: var(--primary-color);
+    background-image: linear-gradient(to left, #005c97, var(--primary-color));
+    background-size: 100%;
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+

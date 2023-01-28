@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Nav,  } from "react-bootstrap";
+import { Container, Navbar, Nav, NavItem,  } from "react-bootstrap";
 
 function Header() {
 	return (
@@ -20,6 +20,11 @@ function Header() {
 							<Nav.Link href="#">Projetos</Nav.Link>
 							<Nav.Link href="#">Contactos</Nav.Link>
 						</Nav>
+						<NavItem>
+							<Nav.Link href="#" className="d-flex align-items-center"><ion-icon name="logo-github"></ion-icon> <span className="ms-2">GitHub</span></Nav.Link>
+						</NavItem>
+						<Nav />
+
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
