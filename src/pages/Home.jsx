@@ -7,6 +7,9 @@ import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import ProjectCard from "../components/layout/ProjectCard";
 import Technologies from "../components/layout/Technologies";
+import TypeWriter from "../components/TypeWritter";
+
+const words = ["Epifânio Francsico", "Desenvolvedor FrontEnd"];
 
 const projectsItem = [
 	{
@@ -90,76 +93,69 @@ function Projects() {
 
 function ContactMe() {
 	return (
-		<section
-			id="contact-me"
-			className="container p-lg-0 my-5 about-me contact-me"
-		>
-			<div className="row justify-content-between">
-				<div className="col-md-5">
-					<h2>
-						Chegou a hora de dar o passo inicial para{" "}
-						<span>levar seu projeto para a um outro nível</span>.
-					</h2>
-				</div>
-				<div className="col-md-4">
-					<p>
-						{" "}
-						“Você pode criar qualquer coisa: basta escrever” – C. S.
-						Lewis
-					</p>
-				</div>
-			</div>
-
-			<div className="row justify-content-between mt-5">
-				<div className="col-md-6 about-me-img"></div>
-
-				<Col md={5}>
-					<form className="ms-5 needs-validation" novalidate>
-						<div className="row">
-							<InputLabelAnimation
-								type="text"
-								name="name"
-								label="Nome"
-							/>
-						</div>
-						<div className="row">
-							<InputLabelAnimation
-								type="email"
-								name="email"
-								label="Email"
-							/>
-						</div>
-						<div className="row">
-							<InputLabelAnimation
-								type="tel"
-								name="phone"
-								label="Telefone"
-							/>
-						</div>
-						<div className="row">
-							<InputLabelAnimation
-								type="text"
-								name="topic"
-								label="Assunto"
-							/>
-						</div>
-						<div className="row">
-							<div className="row my-input-group">
-								<textarea
-									name="message"
-									cols="30"
-									rows="10"
-								></textarea>
-								<label for="message" className="label-name">
-									<span className="content-name">
-										Mensagem
-									</span>
-								</label>
-							</div>
-						</div>
-					</form>
-				</Col>
-			</div>
+		<section id="contact-me" className="my-5 contact-me">
+			<Container>
+				<Row className="justify-content-between">
+					<Col md={6} className="col-md-5">
+						<h4>Vamos construir o seu projeto.</h4>
+					</Col>
+					<Col md={4} className="col-md-4">
+						<p>
+							“Você pode criar qualquer coisa: basta escrever” –
+							C. S. Lewis
+						</p>
+					</Col>
+				</Row>
+				<Row className="justify-content-between">
+					<Col md={7}></Col>
+					<Col md={5}>
+						<form className="ms-5 needs-validation" novalidate>
+							<Row>
+								<InputLabelAnimation
+									type="text"
+									name="name"
+									label="Nome"
+								/>
+							</Row>
+							<Row>
+								<InputLabelAnimation
+									type="email"
+									name="email"
+									label="Email"
+								/>
+							</Row>
+							<Row>
+								<InputLabelAnimation
+									type="tel"
+									name="phone"
+									label="Telefone"
+								/>
+							</Row>
+							<Row>
+								<InputLabelAnimation
+									type="text"
+									name="topic"
+									label="Assunto"
+								/>
+							</Row>
+							<Row>
+								<Row className="my-input-group">
+									<textarea
+										name="message"
+										cols="30"
+										rows="10"
+									></textarea>
+									<label for="message" className="label-name">
+										<span className="content-name">
+											Mensagem
+										</span>
+									</label>
+								</Row>
+							</Row>
+						</form>
+					</Col>
+				</Row>
+			</Container>
 		</section>
 	);
 }
@@ -172,8 +168,9 @@ function Home() {
 				<Row className="align-items-center">
 					<Col md={6}>
 						<h1 className="mb-5">
-							Olá, Eu sou o <span>Epifânio Francisco</span>{" "}
-							Desenvolvedor Frontend
+							Olá, Eu sou
+							<TypeWriter words={words} />
+
 						</h1>
 
 						<BtnPrimary link="#" text="Ver projetos" />
