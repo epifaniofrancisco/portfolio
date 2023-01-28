@@ -3,35 +3,32 @@ h1 span {
     color: $primary-color;
 }
 
-.frontend {
-    margin-top: 2rem;
+.introduction__description {
     font-size: 1rem;
+    color: $text-white--opacity-8;
+    margin-top: 2rem;
 }
 
-.frontend {
-    max-width: 480px;
-    text-align: center;
-    margin: 60px auto;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-
-.frontend::after {
-    content: '|';
-    margin-left: 1px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-}
-
-@keyframes pisca {
-    0%, 100% {
-        opacity: 1;
+.introduction__btn {
+    align-items: center;
+    
+    .btn {
+    width: 150px;
+    padding: 0;
     }
 
-    50% {
-        opacity: 0;
+    > .introduction__btn__more-me {
+        width: 150px;
+        color: $primary-color;
+        margin-left: 1rem;
+
+        &:hover {
+            color: $text-white;
+        }
     }
 }
+
+
 
 .contact-me h4 span {
 	color: $primary-color;

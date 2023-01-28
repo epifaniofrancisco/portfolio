@@ -9,7 +9,7 @@ import ProjectCard from "../components/layout/ProjectCard";
 import Technologies from "../components/layout/Technologies";
 import TypeWriter from "../components/TypeWritter";
 
-const words = ["Epifânio Francsico", "Desenvolvedor FrontEnd"];
+const words = ["Epifânio Francisco", "Desenvolvedor FrontEnd"];
 
 const projectsItem = [
 	{
@@ -47,11 +47,8 @@ function AboutMe() {
 			<Container className="about-me my-5 p-lg-0">
 				<Row className="align-items-center">
 					<Col md={6}>
-						<h1>
-							Olá, Eu sou o <span>Epifânio Francisco</span>{" "}
-							Desenvolvedor Frontend
-						</h1>
-						<p className="my-2 mb-4 text-about-me-description">
+						<h1>Saiba mais sobre mim</h1>
+						<p className="my-5 text-about-me-description">
 							Sou o Epifânio, desenvolvedor com maior foco em
 							desenvolvimento Front End. Atualmente trabalho como
 							freelancer com projetos de tamanho pequeno, médio e
@@ -170,14 +167,24 @@ function Home() {
 						<h1 className="mb-5">
 							Olá, Eu sou
 							<TypeWriter words={words} />
-
+							<p className="introduction__description">
+								Programador, desenvolvedor de sites e escritor.
+								Apaixonado por tecnologia e sempre motivado a
+								aprender.
+							</p>
 						</h1>
 
-						<BtnPrimary link="#" text="Ver projetos" />
+						<Row className="introduction__btn">
+							<BtnPrimary link="#" text="Ver projetos" />
+
+							<a href="#" className="introduction__btn__more-me">
+								Sobre mim
+							</a>
+						</Row>
 					</Col>
 					<Col md={6}>
-						<div className="technologies">
-							<Technologies />
+						<div className="w-100 h-100">
+							<img src="./src/assets/img/Code typing-bro.svg" alt="Code Typing" className="img-fluid" />
 						</div>
 					</Col>
 				</Row>
