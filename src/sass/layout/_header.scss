@@ -28,3 +28,7 @@ header {
 		color: $text-white--opacity-7;
 	}
 }
+
+.navbar-nav .nav-link.active {
+	color: $primary-color !important;
+}

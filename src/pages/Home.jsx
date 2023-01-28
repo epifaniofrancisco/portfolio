@@ -41,9 +41,31 @@ const projectsItem = [
 	},
 ];
 
+function activeWhileScroll() {
+	$(window)
+		.scroll(function () {
+			var windscroll = $(window).scrollTop();
+			if (windscroll >= 100) {
+				$("section").each(function (i) {
+					// The number at the end of the next line is how pany pixels you from the top you want it to activate.
+					if ($(this).position().top <= windscroll - 0) {
+						$(".nav-link.active").removeClass("active");
+						$(".nav-link").eq(i).addClass("active");
+					}
+				});
+			} else {
+				$(".nav-link.active").removeClass("active");
+				$(".nav-link:first").addClass("active");
+			}
+		})
+		.scroll();
+}
+
+activeWhileScroll();
+
 function AboutMe() {
 	return (
-		<section>
+		<section id="about-me">
 			<Container className="about-me my-5 p-lg-0">
 				<Row className="align-items-center">
 					<Col md={6}>
@@ -74,7 +96,7 @@ function AboutMe() {
 	);
 }
 
-function Projects() {
+function ProjectsList() {
 	return projectsItem.map((project) => (
 		<ProjectCard
 			id={project.id}
@@ -105,8 +127,12 @@ function ContactMe() {
 				</Row>
 				<Row className="justify-content-between">
 					<Col md={7}>
-					<div className="w-100 h-100">
-							<img src="./src/assets/img/cross-platform-software-pana.svg" alt="Cross platform software" className="img-fluid" />
+						<div className="w-100 h-100">
+							<img
+								src="./src/assets/img/cross-platform-software-pana.svg"
+								alt="Cross platform software"
+								className="img-fluid"
+							/>
 						</div>
 					</Col>
 					<Col md={5}>
@@ -161,10 +187,23 @@ function ContactMe() {
 	);
 }
 
-function Home() {
+function Projects() {
 	return (
-		<>
-			<Header />
+		<section id="projects" className="p-lg-0 projects">
+			<Container>
+				<h2 className="text-center">Projetos</h2>
+
+				<Row className="p-lg-0 mt-5 justify-content-between">
+					<ProjectsList />
+				</Row>
+			</Container>
+		</section>
+	);
+}
+
+function Introduction() {
+	return (
+		<section id="home">
 			<Container className="about-me my-5 p-lg-0">
 				<Row className="align-items-center">
 					<Col md={6}>
@@ -177,10 +216,8 @@ function Home() {
 								aprender.
 							</p>
 						</h1>
-
 						<Row className="introduction__btn">
 							<BtnPrimary link="#" text="Ver projetos" />
-
 							<a href="#" className="introduction__btn__more-me">
 								Sobre mim
 							</a>
@@ -188,22 +225,30 @@ function Home() {
 					</Col>
 					<Col md={6}>
 						<div className="w-100 h-100">
-							<img src="./src/assets/img/code-typing-bro.svg" alt="Code Typing" className="img-fluid" />
+							<img
+								src="./src/assets/img/code-typing-bro.svg"
+								alt="Code Typing"
+								className="img-fluid"
+							/>
 						</div>
 					</Col>
 				</Row>
 			</Container>
+		</section>
+	);
+}
+
+function Home() {
+	return (
+		<>
+			<Header />
+
+			<Introduction />
+
 			<AboutMe />
 
-			<section className="p-lg-0 projects">
-				<Container>
-					<h2 className="text-center">Projetos</h2>
+			<Projects />
 
-					<Row className="p-lg-0 mt-5 justify-content-between">
-						<Projects />
-					</Row>
-				</Container>
-			</section>
 			<ContactMe />
 
 			<Footer />

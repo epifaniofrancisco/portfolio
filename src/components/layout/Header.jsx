@@ -14,11 +14,10 @@ function Header() {
 							style={{ maxHeight: "100px" }}
 							navbarScroll
 						>
-							<Nav.Link href="#">Sobre mim</Nav.Link>
-							<Nav.Link href="#">Serviços</Nav.Link>
-							<Nav.Link href="#">Habilidades</Nav.Link>
-							<Nav.Link href="#">Projetos</Nav.Link>
-							<Nav.Link href="#">Contactos</Nav.Link>
+							<Nav.Link href="#home">Inicio</Nav.Link>
+							<Nav.Link href="#about-me">Sobre mim</Nav.Link>
+							<Nav.Link href="#projects">Projetos</Nav.Link>
+							<Nav.Link href="#contact-me">Contactos</Nav.Link>
 						</Nav>
 						<NavItem>
 							<Nav.Link href="#" className="d-flex align-items-center"><ion-icon name="logo-github"></ion-icon> <span className="ms-2">GitHub</span></Nav.Link>
