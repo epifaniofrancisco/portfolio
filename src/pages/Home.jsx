@@ -277,8 +277,8 @@ function Introduction() {
 							</p>
 						</h1>
 						<Row className="introduction__btn">
-							<BtnPrimary link="#" text="Ver projetos" />
-							<a href="#" className="introduction__btn__more-me">
+							<BtnPrimary link="#projects" text="Ver projetos" />
+							<a href="#about-me" className="introduction__btn__more-me">
 								Sobre mim
 							</a>
 						</Row>
