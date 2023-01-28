@@ -104,7 +104,11 @@ function ContactMe() {
 					</Col>
 				</Row>
 				<Row className="justify-content-between">
-					<Col md={7}></Col>
+					<Col md={7}>
+					<div className="w-100 h-100">
+							<img src="./src/assets/img/cross-platform-software-pana.svg" alt="Cross platform software" className="img-fluid" />
+						</div>
+					</Col>
 					<Col md={5}>
 						<form className="ms-5 needs-validation" novalidate>
 							<Row>
@@ -184,7 +188,7 @@ function Home() {
 					</Col>
 					<Col md={6}>
 						<div className="w-100 h-100">
-							<img src="./src/assets/img/Code typing-bro.svg" alt="Code Typing" className="img-fluid" />
+							<img src="./src/assets/img/code-typing-bro.svg" alt="Code Typing" className="img-fluid" />
 						</div>
 					</Col>
 				</Row>
