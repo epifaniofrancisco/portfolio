@@ -1,5 +1,5 @@
 import Home from './pages/Home'
-import './src/dist/main.min.css'
+import './dist/main.min.css'
 
 function App() {
 
