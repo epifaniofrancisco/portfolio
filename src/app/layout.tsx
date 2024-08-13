@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 	},
 	icons: {
 		icon: "/favicon.ico",
-		shortcut: "/favicon-16x16.png",
+		shortcut: "/favicon.ico",
 	},
 };
 
@@ -57,9 +57,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-          
+							
             gtag('config', '${googleAnalyticsId}');
-          `}
+        `}
 					</Script>
 				</head>
 			) : null}

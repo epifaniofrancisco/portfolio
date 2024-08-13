@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 import LogoSafeq from "/public/images/logos/logo-safeq.svg";
 import LogoZafir from "/public/images/logos/logo-zafir.svg";
@@ -9,11 +9,8 @@ import {
 } from "@/lib/types";
 
 export const EXTERNAL_LINKS = {
-	GITHUB: "https://github.com/shahsagarm",
-	TWITTER: "https://twitter.com/shahsagarm",
-	FIGMA: "https://www.figma.com/@shahsagarm",
-	FIGMA_FILE:
-		"https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop",
+	GITHUB: "https://github.com/epifaniofrancisco",
+	LINKEDIN: "https://www.linkedin.com/in/epifaniofrancisco/",
 };
 
 export const NAV_LINKS = [
@@ -41,12 +38,8 @@ export const SOCIAL_LINKS = [
 		url: "https://github.com/shahsagarm",
 	},
 	{
-		icon: Twitter,
-		url: "https://twitter.com/shahsagarm",
-	},
-	{
-		icon: Figma,
-		url: "https://www.figma.com/@shahsagarm",
+		icon: Linkedin,
+		url: "https://www.linkedin.com/in/epifaniofrancisco/",
 	},
 ];
 
