@@ -99,7 +99,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col gap-4 p-4">
               <div className="flex items-center justify-between">
-                <Typography>Switch Theme</Typography>
+                <Typography>Trocar tema</Typography>
                 <ThemeSwitcher />
               </div>
               <DownloadCV />

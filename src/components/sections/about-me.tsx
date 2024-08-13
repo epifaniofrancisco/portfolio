@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
-import Link from '@/components/navigation/link';
-import { EXTERNAL_LINKS } from '@/lib/data';
 
 const AboutMeSection = () => {
   return (
