@@ -52,19 +52,19 @@ export const EXTERNAL_LINKS = {
 
 export const NAV_LINKS = [
   {
-    label: 'About',
+    label: 'Sobre',
     href: '#about',
   },
   {
-    label: 'Work',
+    label: 'Experiência',
+    href: '#experience',
+  },
+  {
+    label: 'Projetos',
     href: '#work',
   },
   {
-    label: 'Testimonials',
-    href: '#testimonials',
-  },
-  {
-    label: 'Contact',
+    label: 'Contactos',
     href: '#contact',
   },
 ];
