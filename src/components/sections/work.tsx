@@ -9,10 +9,10 @@ const WorkSection = () => {
     <Container id="work">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Work" />
+          <Tag label="Trabalhos" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          Some of the noteworthy projects I have built:
+          Alguns projectos que já fiz:
         </Typography>
       </div>
 

@@ -4,17 +4,12 @@ import LogoSafeq from "/public/images/logos/logo-safeq.svg";
 import LogoZafir from "/public/images/logos/logo-zafir.svg";
 import LogoFreelancer from "/public/images/logos/logo-freelancer.svg";
 
-import ProjectFiskil from "/public/images/project-fiskil.png";
-import ProjectWingie from "/public/images/project-wingie.png";
-import ProjectPepehousing from "/public/images/project-pepehousing.png";
-
 import AvatarKrisztian from "/public/images/avatar-krisztian.png";
 import AvatarEugen from "/public/images/avatar-eugen.png";
 import AvatarDummy from "/public/images/avatar-dummy.svg";
 
 import {
 	ExperienceDetails,
-	ProjectDetails,
 	TestimonialDetails,
 } from "@/lib/types";
 
@@ -96,64 +91,6 @@ export const EXPERIENCES: ExperienceDetails[] = [
 			"Desenvolvimento de websites e aplicações web para empresas como Freelancer.",
 			"Apoio na construção e lançamento do primeiro website de empresas no mercado, bem como na melhoria do design de sites já existentes.",
 			"Criação de novas interfaces visuais utilizando ferramentas de design e prototipagem para otimizar a experiência do utilizador em websites.",
-		],
-	},
-];
-
-export const PROJECTS: ProjectDetails[] = [
-	{
-		name: "Wingie",
-		description:
-			"A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
-		url: "https://www.wingie.com",
-		previewImage: ProjectWingie,
-		technologies: [
-			"React",
-			"Typescript",
-			"React Bootstrap",
-			"Firebase",
-			"Express.js",
-			"PostgreSQL",
-			"Styled Components",
-			"Redux",
-		],
-	},
-	{
-		name: "Fiskil",
-		description:
-			"A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
-		url: "https://fiskil.com.au",
-		previewImage: ProjectFiskil,
-		technologies: [
-			"React",
-			"Next.js",
-			"Typescript",
-			"Tailwindcss",
-			"Material UI",
-			"Redux Toolkit",
-			"React Query",
-			"Express.js",
-			"PostgreSQL",
-			"Firebase",
-			"AWS Amplify",
-			"Cypress",
-			"Storybook",
-		],
-	},
-	{
-		name: "Pepehousing",
-		description:
-			"A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
-		url: "https://pepehousing.com",
-		previewImage: ProjectPepehousing,
-		technologies: [
-			"React",
-			"Next.js",
-			"Typescript",
-			"Tailwindcss",
-			"Redux Toolkit",
-			"React Query",
-			"Storybook",
 		],
 	},
 ];
