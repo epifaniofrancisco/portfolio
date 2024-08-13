@@ -6,13 +6,13 @@ import Container from '@/components/layout/container';
 
 const ExperienceSection = () => {
   return (
-    <Container className="bg-gray-50">
+    <Container className="bg-gray-50" id="experience">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Experience" />
+          <Tag label="Experiencia" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          Here is a quick summary of my most recent experiences:
+          Um pequeno resumo das minhas experiências profissionais
         </Typography>
       </div>
 
