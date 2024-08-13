@@ -10,7 +10,6 @@ import AvatarDummy from "/public/images/avatar-dummy.svg";
 
 import {
 	ExperienceDetails,
-	TestimonialDetails,
 } from "@/lib/types";
 
 export const EXTERNAL_LINKS = {
@@ -92,29 +91,5 @@ export const EXPERIENCES: ExperienceDetails[] = [
 			"Apoio na construção e lançamento do primeiro website de empresas no mercado, bem como na melhoria do design de sites já existentes.",
 			"Criação de novas interfaces visuais utilizando ferramentas de design e prototipagem para otimizar a experiência do utilizador em websites.",
 		],
-	},
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
-	{
-		personName: "Krisztian Gyuris",
-		personAvatar: AvatarKrisztian,
-		title: "Founder - inboxgenie.io",
-		testimonial:
-			"Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
-	},
-	{
-		personName: "Eugen Esanu",
-		personAvatar: AvatarEugen,
-		title: "Founder - shosho.design",
-		testimonial:
-			"Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-	},
-	{
-		personName: "Joe Matkin",
-		personAvatar: AvatarDummy,
-		title: "Freelancer",
-		testimonial:
-			"Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
 	},
 ];
