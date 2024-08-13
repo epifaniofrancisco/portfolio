@@ -35,7 +35,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
 	{
 		icon: Github,
-		url: "https://github.com/shahsagarm",
+		url: "https://github.com/epifaniofrancisco",
 	},
 	{
 		icon: Linkedin,
