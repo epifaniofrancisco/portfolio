@@ -25,4 +25,3 @@ export type ProjectDetails = {
   previewImage: string | StaticImageData;
   technologies: string[];
 };
-

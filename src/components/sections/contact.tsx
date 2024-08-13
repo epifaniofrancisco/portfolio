@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Copy, Mail, Phone } from 'lucide-react';
-// import Link from 'next/link';
 
 import SocialIcons from '@/components/data-display/social-icons';
 import Tag from '@/components/data-display/tag';
@@ -12,8 +11,8 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+let email = 'epifaniofrancisco03@gmail.com';
+let phone = '+244925009576';
 
 type CopyValue = 'email' | 'phone';
 
@@ -45,11 +44,10 @@ const ContactSection = () => {
     <Container id="contact">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Get in touch" />
+          <Tag label="Entre em contacto" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
+          Não hesite em contactar-me se estiver à procura de um desenvolvedor, tiver alguma dúvida, ou simplesmente quiser conectar-se.
         </Typography>
       </div>
 
@@ -86,7 +84,7 @@ const ContactSection = () => {
         </div>
         <div className="flex flex-col items-center gap-2">
           <Typography className="text-center">
-            You may also find me on these platforms!
+            Podes encontrar-me também no:
           </Typography>
           <SocialIcons />
         </div>

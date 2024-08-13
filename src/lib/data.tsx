@@ -4,10 +4,6 @@ import LogoSafeq from "/public/images/logos/logo-safeq.svg";
 import LogoZafir from "/public/images/logos/logo-zafir.svg";
 import LogoFreelancer from "/public/images/logos/logo-freelancer.svg";
 
-import AvatarKrisztian from "/public/images/avatar-krisztian.png";
-import AvatarEugen from "/public/images/avatar-eugen.png";
-import AvatarDummy from "/public/images/avatar-dummy.svg";
-
 import {
 	ExperienceDetails,
 } from "@/lib/types";
