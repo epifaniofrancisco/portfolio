@@ -1,8 +1,7 @@
-import {
-	ProjectDetails,
-} from "@/lib/types";
+import { ProjectDetails } from "@/lib/types";
 
 import AngoCursos from "/public/images/projects/angocursos.png";
+import GithubRepository from "/public/images/projects/github-random-repository.png";
 import JogoDigitacao from "/public/images/projects/jogo-digitacao.png";
 import NoTeuKubico from "/public/images/projects/no-teu-kubico.png";
 import RocketNews from "/public/images/projects/rocketnews.png";
@@ -11,6 +10,20 @@ import TransportOne from "/public/images/projects/transport-one.png";
 import VerificadorBI from "/public/images/projects/verificador-bi.png";
 
 export const PROJECTS: ProjectDetails[] = [
+	{
+		name: "Github Random Repository",
+		description:
+			"Este é um projeto que permite aos usuários buscar repositórios aleatórios no GitHub.",
+		url: "https://github-random-repository-one.vercel.app/",
+		previewImage: GithubRepository,
+		technologies: [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"API Integration",
+			"DOM Manipulation",
+		],
+	},
 	{
 		name: "Verificador de Bilhete de Identidade",
 		description:
